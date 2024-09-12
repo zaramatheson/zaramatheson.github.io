@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Lato, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #a1c3d1;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 1;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+ 
+  width: 100%;
+  padding: 0px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style><link rel="stylesheet" href="https://jsdev.arcgis.com/4.31/esri/themes/dark/main.css" />
+ 
+    <script src="https://js.arcgis.com/4.30/"></script>
+
+    <!-- Load the Map Components -->
+    <script type="module" src="https://js.arcgis.com/map-components/4.30/arcgis-map-components.esm.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <h1>Trans Canada Trail Adventures </h1>
+  <p>Exploring the Trans Canada Trail one Province at a time.</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">2023</a>
+  <a href="#">2022</a>
+  <a href="#" class="right">About</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Official Site</h2>
+    <div class="fakeimg" style="height:200px;width:200px;"><a href="https://tctrail.ca/" ><img src="https://discoveryroutes.ca/wp-content/uploads/2022/06/TCT-tm-Logo-Blue_RGB-300x214.jpg" style="height:100%;width:100%;"></a></div>
+    <h3>Other Resources</h3>
+    
+    <div class="fakeimg" style="height:60px;"><a href="https://tourismnewbrunswick.ca/"><img src="https://tourismnewbrunswick.ca/sites/default/files/rsz_explorenb_logo_externalmarkets_notagline_rgb_reverse.png" style="height:100%;width:60%;"></a></div><br>
+   
+  </div>
+  <div class="main">
+    <h2>New Brunswick</h2>
+    <h5>Day 3, August 12, 2024</h5>
+    <h4>Fundy National Park & Alma </h4>
+    <div class="fakeimg" style="height:500px;"><iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="New Brunswick Trail Fundy NP" src="//prodtesting.maps.arcgis.com/apps/Embed/index.html?webmap=56f7eee84a714c9f8d6d452850011939&extent=-64.9646,45.5895,-64.9329,45.6022&zoom=true&previewImage=false&scale=false&search=true&searchextent=true&legend=true&disable_scroll=true&theme=light"></iframe></div>
+    <p> Hiking the Trans Canada Trail in New Brunswick offers a breathtaking journey through diverse landscapes, from lush forests to stunning coastal views. As you traverse this iconic trail, the rugged beauty of the Canadian wilderness unfolds before you, providing a sense of tranquility and adventure. Along the way, you may encounter wildlife, pristine lakes, and charming villages that showcase the rich cultural heritage of the region. One of the highlights of this trek is reaching Fundy National Park, where you can immerse yourself in the natural wonders of the area. Fundy National Park, nestled along the Bay of Fundy, boasts a variety of amenities that cater to both hikers and nature enthusiasts.</p>
+    
+    <p> After a long day of hiking, setting up camp in Fundy National Park offers a chance to unwind and connect with the surrounding environment. The park provides well-maintained campsites equipped with fire pits, picnic tables, and access to clean washroom facilities. For those seeking a more comfortable stay, there are also oTENTiks available, which combine the experience of camping with the convenience of a cabin. In addition to camping facilities, Fundy National Park offers a range of amenities to enhance your outdoor experience. Hikers can take advantage of the park's extensive trail network, which includes routes of varying difficulty that lead to stunning viewpoints and hidden gems within the park.</p>
+
+  For those interested in exploring the marine life of the Bay of Fundy, guided kayaking tours are available to showcase the tidal phenomena and unique ecosystems of the area. Moreover, Fundy National Park features a visitor center where you can learn about the park's history, geology, and conservation efforts. The center also provides valuable information on upcoming events, guided hikes, and educational programs that offer insights into the natural wonders of the region. Whether you choose to relax by a crackling campfire under the starlit sky or embark on a new adventure exploring the trails and coastline, Fundy National Park offers a memorable camping experience amidst the beauty of New Brunswick's wilderness. </p>
+    <br>
+    <h2>New Brunswick</h2>
+    <h5>Day 2, August 11, 2024</h5>
+    <h4>Fundy Trail Parkway</h4>
+    <div class="fakeimg" style="height:500px;"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="New Brunswick Trail" src="//prodtesting.maps.arcgis.com/apps/Embed/index.html?webmap=479d18a4a55e4221b4567dcb237fbcfa&extent=-65.4672,45.3924,-65.3405,45.4432&home=true&zoom=true&previewImage=false&scale=false&search=true&searchextent=true&legend=true&disable_scroll=true&theme=light"></iframe></div>
+    <p>Day 2 saw us begin the Fundy Footpath section, one of the toughest parts of the trail:</p>
+    <div class="fakeimg" style="height:450px;"><img src=https://zaramatheson.github.io/sign.jpg style="height:100%;width:70%;"></div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2></h2>
+</div>
+
+</body>
+</html>
