@@ -118,12 +118,15 @@ body {
     width: 100%;
   }
 }
-</style><link rel="stylesheet" href="https://jsdev.arcgis.com/4.31/esri/themes/dark/main.css" />
- 
-    <script src="https://js.arcgis.com/4.30/"></script>
-
-    <!-- Load the Map Components -->
-    <script type="module" src="https://js.arcgis.com/map-components/4.30/arcgis-map-components.esm.js"></script>
+</style>
+<!-- Load Calcite Components-->
+<link rel="stylesheet" href="https://js.arcgis.com/next/esri/themes/light/main.css" />
+<link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.8.6/calcite.css" />
+<!-- Load the ArcGIS Maps SDK for JavaScript -->
+<script type="module" src="https://js.arcgis.com/calcite-components/2.8.6/calcite.esm.js"></script>
+<script src="https://js.arcgis.com/next"></script>
+<!-- Load the Map Components -->
+ <script type="module" src="https://jsdev.arcgis.com/map-components/4.31/arcgis-map-components.esm.js"></script>
 </head>
 <body>
 
@@ -153,13 +156,12 @@ body {
     <h5>Day 3, August 12, 2024</h5>
     <h4>Fundy National Park & Alma </h4>
     <div class="fakeimg" style="height:500px;">  <arcgis-map item-id="56f7eee84a714c9f8d6d452850011939">
-        <arcgis-legend position="top-right"></arcgis-legend>
-  <arcgis-search position="bottom-left">
-  </arcgis-search>
-        <arcgis-zoom position="top-left">
-  </arcgis-zoom>
-  <arcgis-home position="top-left">
-  </arcgis-home>
+        <arcgis-legend position="top-left"></arcgis-legend>
+  <arcgis-search position="top-right">
+  </arcgis-search> 
+        <arcgis-zoom position="bottom-right">
+  </arcgis-zoom> 
+ 
     </arcgis-map></div>
     <p> Hiking the Trans Canada Trail in New Brunswick offers a breathtaking journey through diverse landscapes, from lush forests to stunning coastal views. As you traverse this iconic trail, the rugged beauty of the Canadian wilderness unfolds before you, providing a sense of tranquility and adventure. Along the way, you may encounter wildlife, pristine lakes, and charming villages that showcase the rich cultural heritage of the region. One of the highlights of this trek is reaching Fundy National Park, where you can immerse yourself in the natural wonders of the area. Fundy National Park, nestled along the Bay of Fundy, boasts a variety of amenities that cater to both hikers and nature enthusiasts.</p>
     
