@@ -1,0 +1,104 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <style>* {
+    box-sizing:border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Raleway;
+    color:DimGray;
+    background-color: #Fffff;
+  }
+  
+  .container {
+    padding: 10px;
+    height: 600px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  .column1 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+  
+  .column2 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  
+  .large-font {
+    font-size: 48px;
+  }
+  
+  .xlarge-font {
+    font-size: 64px
+  }
+  
+  
+  </style>
+  <!-- Add script to the <head> of your page to load the embeddable map component -->
+  <script type="module" src="https://js.arcgis.com/embeddable-components/4.32/arcgis-embeddable-components.esm.js"></script>
+</head>
+
+<body>
+
+  <div style="text-align:center">
+    <h2 class="medium-font" style="color:Black;">Trans Canada Trail Adventures</h2>
+    <p style="color:Black;">Exploring the Trans Canada Trail one Province at a time.
+    </p>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="container" style="background-color:#FFFFFF">
+    <div class="row">
+      <div class="column1">
+        <h1 class="medium-font" style="color:Black;"><b>New Brunswick - Week 2 </b></h1>
+
+        <p><span>
+            Hiking the Trans Canada Trail in New Brunswick offers a breathtaking journey through diverse landscapes, from lush Canadian wilderness unfolds before you, providing a sense of tranquility and adventure. Along the way, you may encounter wildlife, pristine lakes, and charming villages that showcase the rich cultural heritage of the region. One of the highlights of this trek is reaching Fundy National Park, where you can immerse yourself in the natural wonders of the area. Fundy National Park, nestled along the Bay of Fundy, boasts a variety of amenities that cater to both hikers and nature enthusiasts.</span> </p>
+        <p> After a long day of hiking, setting up camp in Fundy National Park offers a chance to unwind and connect with the surrounding environment. The park provides well-maintained campsites equipped with fire pits, picnic tables, and access to clean available, which combine the experience of camping with the convenience of a cabin. In addition to camping facilities, Fundy National Park offers a range of amenities to enhance your outdoor experience. Hikers can take advantage of the park's extensive trail network, which includes routes of varying difficulty that lead to stunning viewpoints and hidden gems within the park.
+        </p>
+      </div>
+      <div class="column2">
+        <arcgis-embedded-map style="height:200px;width:200px;" item-id="87560846c1b8499bbdeeb2df5286cb0a" theme="light" portal-url="https://arcgis.com" information-enabled></arcgis-embedded-map>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="container" style="background-color:#ffffff">
+
+<!-- Add custom element to <body> of your page -->
+ <arcgis-embedded-map style="height:600px;width:700px;" item-id="cf35269c59cd45cc9bfae3480c0a64d7" theme="light" heading-enabled information-enabled portal-url="https://jsapi.maps.arcgis.com" ></arcgis-embedded-map>
+  </div>
+
+  <!-- Section 3 -->
+
+  <div class="container" style="background-color:#FFFFFF">
+    <div class="row">
+      <div class="column1">
+        <h1 class="medium-font" style="color:Black;"><b>New Brunswick - Week 1 </b></h1>
+
+        <p><span>
+            Fredericton, New Brunswick, serves as an excellent starting point for embarking on a Trans Canada Trail hike. The city's picturesque landscapes and vibrant culture offer a perfect prelude to the adventure ahead. Before setting off, exploring Fredericton's charming downtown area is a must. Stroll along the Saint John River on the Bill Thorpe Walking Bridge, visit the historic Legislative Assembly Building, and immerse yourself in the local art scene at the Beaverbrook Art Gallery. Nature enthusiasts can enjoy a leisurely walk through Odell Park or take a scenic boat tour along the river. Additionally, sampling local cuisine at the city's diverse restaurants and cafes is a delightful way to fuel up before hitting the trail. With its blend of natural beauty and cultural attractions, Fredericton provides an ideal blend of experiences to kickstart your Trans Canada Trail journey.
+
+      </div>
+      <div class="column2">
+        <img src=https://zaramatheson.github.io/sign.jpg style="height:100%;width:100%;">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
